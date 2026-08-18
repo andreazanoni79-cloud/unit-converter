@@ -37,7 +37,7 @@ body {
     border-radius: 5px;
 }
 
-#input-value {
+#input-el {
     margin-bottom: 26px;
     width: 117px;
     height: 43px;
@@ -78,4 +78,12 @@ h1 {
 
 p {
 color: #FFFFFF;    
+}
+
+#convert-btn {
+    transition: transform 0.1s;
+}
+
+#convert-btn:active {
+    transform: translateY(2px);
 }
