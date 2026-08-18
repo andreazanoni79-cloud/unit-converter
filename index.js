@@ -10,13 +10,14 @@ const volumeConv = document.getElementById("volume-conv");
 const massConv = document.getElementById("mass-conv");
 
 let inputValue = 0;
-
+// he utilizado parserFloat para convertir el valor de entrada a un número decimal y poder realizar las conversiones correctamente. Además, he agregado validaciones para asegurarme de que el usuario ingrese un número válido y positivo antes de realizar las conversiones.
+// la alternativa hubiera sido utilizar Number() para convertir el valor de entrada a un número, pero parseFloat() es más adecuado en este caso ya que permite manejar números decimales y evitar errores de conversión.
 inputEl.addEventListener("input", function () {
     inputValue = parseFloat(inputEl.value);
 });
 
 convertBtn.addEventListener("click", function () {
-    
+    // isNaN verifica que el valor ingresado no sea un número, y si lo es, se muestra un mensaje de error en los elementos de salida. Si el valor ingresado es negativo o cero, también se muestran mensajes de error correspondientes. Si el valor ingresado es válido y positivo, se realizan las conversiones y se muestran los resultados en los elementos de salida.
     if (isNaN(inputValue)) {
         lengthConv.textContent = "Please enter a valid number";
         volumeConv.textContent = "Please enter a valid number";
