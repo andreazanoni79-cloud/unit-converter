@@ -11,7 +11,7 @@ body {
 }
 
 #main-container {
-    background-color: #6943FF;
+    background-color: #765cdd;
     padding-bottom: 34px;
     display: flex;
     flex-direction: column;
@@ -73,7 +73,7 @@ h1 {
     font-family: "Open Sans", sans-serif;
     font-weight: 800px;
     font-size: 28px;
-    color: #FFFFFF;
+    color: #a1bce3;
 }
 
 p {
